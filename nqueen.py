@@ -47,7 +47,7 @@ class Board:
         return [(row, col) for col in range(self.dim) if self.allowed[row][col]]
 
 
-def nqueen(board, positions=[], row=0, solutions=[], all_solutions=False):
+def nqueen(board, positions=[], row=0):
     """Solve the n-queen puzzle recursively for a given board."""
     valids = board.valid_positions(row)
     if not valids:
